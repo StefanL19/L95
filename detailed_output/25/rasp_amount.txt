@@ -1,0 +1,14 @@
+(|The| NHS |does| |not| |have| |the| |amount| |of| |savings| |that| |ministers| |expect| |.|) 1 ; (-18.977)
+gr-list: 1
+(|ncsubj| |have:4_VH0| |Nhs:1_NP1| _)
+(|aux| |have:4_VH0| |do+s:2_VDZ|)
+(|ncmod| _ |have:4_VH0| |not+:3_XX|)
+(|dobj| |have:4_VH0| |amount:6_NN1|)
+(|det| |amount:6_NN1| |the:5_AT|)
+(|iobj| |amount:6_NN1| |of:7_IO|)
+(|dobj| |of:7_IO| |savings:8_NN2|)
+(|ccomp| |that:9_CST| |savings:8_NN2| |expect:11_VV0|)
+(|ncsubj| |expect:11_VV0| |minister+s:10_NN2| _)
+(|det| |Nhs:1_NP1| |the:0_AT|)
+
+

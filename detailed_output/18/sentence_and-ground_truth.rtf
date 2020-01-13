@@ -1,0 +1,256 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf500
+{\fonttbl\f0\fswiss\fcharset0 Arial-BoldMT;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\froman\fcharset0 Times-Roman;
+\f3\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33400\viewh18540\viewkind0
+\deftab720
+\pard\pardeftab720\sl340\partightenfactor0
+
+\f0\b\fs29\fsmilli14667 \cf2 \expnd0\expndtw0\kerning0
+The slightly simplified version of the Viterbi algorithm that we present takes as input a single HMM and a sequence of observed words O = (o1,o2,...oT) and returns the most probable state/tag sequence Q = (q1,q2,qT) together with its probability. \
+\
+The slightly simplified version of the Viterbi algorithm that we present takes as input a single HMM and a sequence of observed words (O=o1,o2,oT) and returns the most probable state / tag sequence (Q=q1,q2,qT) together with its probability.\
+\
+Charniak GT\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f1\b0 \cf2 1	The			_	_	_	_	4	det		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 2	slightly\'c2\'a0 		_	_	_	_	3	advmod	_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 3	simplified		_	_	_	_	4	amod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 4	version		_	_	_	_	12	nsubj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 5	of			_	_	_	_	4	prep		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 6	the			_	_	_	_	8	det		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 7	Viterbi		_	_	_	_	8	nn		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 8	algorithm		_	_	_	_	5	pobj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 9	that			_	_	_	_	11	mark		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 10	we			_	_	_	_	11	nsubj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 11	present		_	_	_	_	4	rcmod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 12	takes			_	_	_	_	0	root		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 13	as			_	_	_	_	12	prep		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 14	input			_	_	_	_	13	pobj		_	_\'a0
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 15	a			_	_	_	_	17	det		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 16	single		_	_	_	_	17	amod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 17	HMM			_	_	_	_	12	dobj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 18	and			_	_	_	_	17	cc		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 19	a			_	_	_	_	20	det		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 20	sequence		_	_	_	_	17	conj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 21	of			_	_	_	_	20	prep		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 22	observed		_	_	_	_	23	amod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 23	words			_	_	_	_	21	pobj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 24	O=(o1,..,oT)	_	_	_	_	23	nn		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 25	and			_	_	_	_	12	cc		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 26	returns		_	_	_	_	12	conj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 27	the			_	_	_	_	33	det		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 28	most			_	_	_	_	29	advmod	_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 29	probable		_	_	_	_	33	amod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 30	state			_	_	_	_	33	nn		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 31	/			_	_	_	_	30	cc		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 32	tag			_	_	_	_	30	conj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 33	sequence		_	_	_	_	26	dobj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 34	Q=(q1,..qT)	_	_	_	_	33	nn		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 35	together		_	_	_	_	36	amod		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 36	with			_	_	_	_	33	prep		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 37	its			_	_	_	_	38	poss		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 38	probability	_	_	_	_	36	pobj		_	_
+\f2\fs24 \
+
+\f1\fs29\fsmilli14667 39	.			_	_	_	_	12	punct
+\f2\fs24 \
+\
+RASP GT\
+\pard\pardeftab720\sl400\partightenfactor0
+
+\f3\fs29\fsmilli14667 \cf2 (|det| |version:4| |The:1|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncsubj| |simplified:3| |version:4| |obj|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|passive| |simplified:3|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |simplified:3| |slightly:2|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|iobj| |version:4| |of:5|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |of:5| |algorithm:8|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|det| |algorithm:8| |the:6|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |algorithm:8| |Viterbi:7|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|cmod| |that:9| |version:4| |present:11|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |present:11| |version:4|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncsubj| |present:11| |we:10| _ )
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncsubj| |and:25| |version:4|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |and:25| |takes:12|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |and:25| |returns:26|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |takes:12| |as:13|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |as:13| |input:14|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |takes:12| |and:18|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |and:18| |HMM:17|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |and:18| |sequence:20|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|det| |HMM:17| |a:15|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |HMM:17| |single:16|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|det| |sequence:20| |a:19|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|iobj| |sequence:20| |of:21|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |of:21| |words:23|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |words:23| |observed:22|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |sequence:20| |O = (o1, o2, ...oT ):24|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |returns:26||sequence:33|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|det| |sequence:33| |the:27|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |sequence:33| |/:31|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |/:31| |state:30|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|conj| |/:31| |tag:32|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |sequence:33| |probable:29|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |probable:29| |most:28|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |sequence:33| |O = (o1, o2, ...oT ):34|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |sequence:33||with:36|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|ncmod| _ |with:36||together:35|)
+\f2\fs24 \
+
+\f3\fs29\fsmilli14667 (|dobj| |with:36| |probability:38|)
+\f2\fs24 \
+\
+Input to the Charniak Parser when tokenised\
+n_best = rrp.parse_tagged(["The", "slightly", "simplified", "version", "of", "the", "Viterbi", "algorithm", "that", "we", "prsent", "takes", "as", "input", "a", "single", "HMM", "and",\
+    "a", "sequence", "of", "observed", "words", "O=(o1,o2,o3,...)", "and", "returns", "the", "most", "probable", "state/tag", "sequence", "q=(q1,q1,...)", "together", "with", "its", "probability", "."],\
+    possible_tags=\{0:["DT"], 1:["RB"], 23:["NN"], 31:["NN"]\})\
+\
+\
+\
+}

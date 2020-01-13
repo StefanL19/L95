@@ -1,0 +1,9 @@
+(|Imagination| |without| |skill| |gives| |us| |modern| |art| |.|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |art:6_NN1| |modern:5_JJ|)
+(|ncsubj| |give+s:3_VVZ| |imagination:0_NN1| _)
+(|dobj| |give+s:3_VVZ| |we+:4_PPIO2|)
+(|ncmod| _ |imagination:0_NN1| |without:1_IW|)
+(|dobj| |without:1_IW| |skill:2_NN1|)
+
+

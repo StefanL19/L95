@@ -1,0 +1,27 @@
+(I |saw| |the| |book| |you| |bought| |.|) 4 ; (-6.311 -6.783 -7.726 -8.198)
+gr-list: 1
+(|ncsubj| |see+ed:1_VVD| |I:0_PPIS1| _)
+(|dobj| |see+ed:1_VVD| |book:3_NN1|)
+(|det| |book:3_NN1| |the:2_AT|)
+(|ccomp| _ |book:3_NN1| |buy+ed:5_VVD|)
+(|ncsubj| |buy+ed:5_VVD| |you:4_PPY| _)
+gr-list: 2
+(|ncsubj| |see+ed:1_VVD| |I:0_PPIS1| _)
+(|dobj| |see+ed:1_VVD| |book:3_NN1|)
+(|det| |book:3_NN1| |the:2_AT|)
+(|ccomp| _ |book:3_NN1| |buy+ed:5_VVN|)
+(|ncsubj| |buy+ed:5_VVN| |you:4_PPY| _)
+gr-list: 3
+(|ncsubj| |see+ed:1_VVD| |I:0_PPIS1| _)
+(|ccomp| _ |see+ed:1_VVD| |buy+ed:5_VVD|)
+(|dobj| |see+ed:1_VVD| |book:3_NN1|)
+(|ncsubj| |buy+ed:5_VVD| |you:4_PPY| _)
+(|det| |book:3_NN1| |the:2_AT|)
+gr-list: 4
+(|ncsubj| |see+ed:1_VVD| |I:0_PPIS1| _)
+(|ccomp| _ |see+ed:1_VVD| |buy+ed:5_VVN|)
+(|dobj| |see+ed:1_VVD| |book:3_NN1|)
+(|ncsubj| |buy+ed:5_VVN| |you:4_PPY| _)
+(|det| |book:3_NN1| |the:2_AT|)
+
+

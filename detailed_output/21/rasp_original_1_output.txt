@@ -1,0 +1,18 @@
+(|Skill| |without| |imagination| |is| |craftsmanship| |and| |gives| |us| |many| |useful| |objects| |such| |as| |wickerwork| |picnic| |baskets| |.|) 0 ; ()
+gr-list: 1
+(|ncmod| _ |such:11_DA| |as:12_CSA|)
+(|dobj| |as:12_CSA| |basket+s:15_NN2|)
+(|ncmod| _ |basket+s:15_NN2| |wickerwork:13_NN1|)
+(|ncmod| _ |basket+s:15_NN2| |picnic:14_NN1|)
+(|ccomp| _ |skill:0_NN1| |and:5_CC|)
+(|ncsubj| |and:5_CC| |without:1_IW| |inv|)
+(|conj| |and:5_CC| |be+s:3_VBZ|)
+(|conj| |and:5_CC| |give+s:6_VVZ|)
+(|obj2| |give+s:6_VVZ| |object+s:10_NN2|)
+(|dobj| |give+s:6_VVZ| |we+:7_PPIO2|)
+(|ncmod| _ |object+s:10_NN2| |many:8_DA2|)
+(|ncmod| _ |object+s:10_NN2| |useful:9_JJ|)
+(|xcomp| _ |be+s:3_VBZ| |craftsmanship:4_NN1|)
+(|dobj| |without:1_IW| |imagination:2_NN1|)
+
+
