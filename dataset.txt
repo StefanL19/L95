@@ -1,0 +1,21 @@
+id:25 The doctors are warning that the NHS can not make the £ 20bn of savings by 2014 that ministers expect, while simultaneously undertaking a huge reorganisation that will see England's 152 primary care trusts ( PCTs ) abolished and consortiums of GPs assume responsibility for the commissioning of services for patients.
+
+id:24 Instead of constantly worrying about funding, the faculty and students can focus on their project, with the exception of sponsors’ weeks, when they have to convince companies to start or continue their support.
+
+id:21a Skill without imagination is craftsmanship and gives us many useful objects such as wickerwork picnic baskets.
+
+id:21b Imagination without skill gives us modern art.
+
+The slightly simplified version of the Viterbi algorithm that we present takes as input a single HMM and a sequence of observed words Oo1o2oT and returns the most probable state / tag sequence Qq1q2qT together with its probability.
+
+id:16 Making these decisions requires sophisticated knowledge of syntax; tagging manuals ( Santorini , 1990 ) give various heuristics that can help human coders make these decisions and that can also provide useful features for automatic taggers.
+
+id:15 English also has many words of more or less unique function, including interjections (oh, ah), negatives (no, not), politeness markers (please, thank you), and the existential ‘there’ (there are horses but not unicorns) among others.
+
+id:9 The veterans who I thought that we would meet at the reunion were dead.
+
+id:5 The horse which Kim sometimes rides is more bad tempered than mine.
+
+id:12 It won’t rain but there might be snow on high ground if the temperature stays about the same over the next 24 hours.
+
+id:14 My wildest dream is to build a POS tagger which processes 10K words per second and uses only 1 MB of RAM, but it may prove too hard.
